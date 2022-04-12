@@ -4,28 +4,35 @@
 const favorites = ['javascript', 'html', 'css'];
 
 // iterate over it and console.log each element
-// ... your code here
+
+favorites.forEach((el) => console.log(el))
 
 // remove first element
-// ... your code here
+
+favorites.shift()
 console.log(favorites); // => [ 'html', 'css' ]
 
 // remove last element
-// ... your code here
-console.log(favorites); // => [ 'html' ]
+
+favorites.pop()
+console.log(favorites);// => [ 'html' ]
 
 // add 'react' on the first place
-// ... your code here
-console.log(favorites); // => [ 'react', 'html' ]
+
+favorites.unshift('react')
+console.log(favorites)// => [ 'react', 'html']
 
 // add 'node' to the last place
-// ... your code here
-console.log(favorites); // => [ 'react', 'html', 'node' ]
+
+favorites.push('node')
+console.log(favorites)// => [ 'react', 'html', 'node' ]
 
 // remove element in the position 2 and add 'express'
-// ... your code here
-console.log(favorites); // => [ 'react', 'express', 'node' ]
+
+favorites.splice(1, 1, 'express')
+console.log(favorites) // => [ 'react', 'express', 'node' ]
 
 // remove elements in the positions 2 and 3 and add 'mongodb'
-// ... your code here
+
+favorites.splice(1, 2, 'mongodb')
 console.log(favorites); // => [ 'react', 'mongodb' ]

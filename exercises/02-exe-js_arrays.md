@@ -2,10 +2,16 @@
 
 ## Exercise
 
+
 1. Using `push` and `unshift`, make this array contain the numbers from zero through seven:
 
 ```js
 const arr = [2, 3, 4];
+
+arr.push(5, 6, 7);
+arr.unshift(1);
+
+console.log(arr)
 
 // your code here
 
